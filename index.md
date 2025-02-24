@@ -1,1 +1,11 @@
-# Rithika Vennamaneni
+
+<!doctype html>
+<html>
+  <head>
+    <title>This is the title of the webpage!</title>
+  </head>
+  <body>
+    <!-- this is just a comment for IS445 Fall 2024 BCU/BCG -->
+    <p>This is an example paragraph for Fa2024-ID36283. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
+  </body>
+</html>
