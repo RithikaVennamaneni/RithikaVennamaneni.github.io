@@ -4,7 +4,7 @@ title: "Homework 6: UFO Sightings with Altair"
 permalink: /hw6/
 ---
 
-#  Homework 6: UFO Sightings with Altair
+#  Homework 5: UFO Sightings with Altair
 
 ---
 
@@ -37,6 +37,6 @@ This plot is entirely new (not part of Homework #5). I created it to show the ge
 
 ---
 
-## 🎛️ Interactivity Discussion
+## Interactivity Discussion
 
 The second plot uses a dropdown to filter sightings by country. This goes beyond default pan/zoom interactions and helps users focus on a specific region’s reports. For example, selecting `us` shows high-density areas, while selecting `gb` reveals patterns in the UK. This makes the visualization more engaging and insightful.
