@@ -8,8 +8,8 @@ permalink: /hw6/
 
 ---
 
-### 📂 [The Data](https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv)  
-### 📓 [The Analysis Notebook](https://github.com/rithikavennamaneni/RithikaVennamaneni.github.io/blob/main/python_notebooks/Workbook.ipynb)
+### [The Data](https://github.com/UIUC-iSchool-DataViz/is445_data/raw/main/ufo-scrubbed-geocoded-time-standardized-00.csv)  
+### [The Analysis Notebook](https://github.com/rithikavennamaneni/RithikaVennamaneni.github.io/blob/main/python_notebooks/Workbook.ipynb)
 
 ---
 
