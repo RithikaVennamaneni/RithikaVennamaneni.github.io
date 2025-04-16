@@ -21,7 +21,6 @@ This plot visualizes the number of UFO sightings per year. Using the `date_time`
 
 For encoding, I used the year on the x-axis and count on the y-axis. I included tooltips to make the chart more interactive, allowing users to hover and view exact values. I used a simple blue line style to maintain clarity.
 
-> “This plot was adapted from Homework #5, where I previously visualized a time trend using Matplotlib. Here, I rebuilt the chart in Altair with better tooltips and styling to match Vega-Lite standards.”
 
 ---
 
@@ -33,7 +32,6 @@ This plot displays UFO sightings using a world map. Each point represents a sigh
 
 Encodings include longitude on the x-axis, latitude on the y-axis, and color representing UFO shape. I used a dropdown filter with `alt.param()` and `transform_filter()` in Altair v5 to enable interactivity.
 
-This plot is entirely new (not part of Homework #5). I created it to show the geographical distribution of sightings, and the dropdown adds clarity by reducing clutter and letting users focus on specific regions.
 
 ---
 
