@@ -26,7 +26,7 @@ For encoding, I used the year on the x-axis and count on the y-axis. I included 
 
 ##  Plot 2: Interactive Map of UFO Sightings by Country
 
-<iframe src="/assets/chart2_ufo.html" width="750" height="700"></iframe>
+<iframe src="/assets/chart2_ufo .html" width="750" height="700"></iframe>
 
 This plot displays UFO sightings using a world map. Each point represents a sighting and is positioned by latitude and longitude. I used a dropdown filter to let users select a country and see sightings specific to that country. The shape of the UFO is encoded using color.
 
