@@ -15,7 +15,7 @@ permalink: /hw6/
 
 ##  Plot 1: UFO Sightings Over Time
 
-<iframe src="/assets/chart1_ufo_time.html" width="700" height="400"></iframe>
+<iframe src="/assets/chart1_ufo_time.html" width="700" height="700"></iframe>
 
 This plot visualizes the number of UFO sightings per year. Using the `date_time` column, I extracted the year using `pandas` and grouped the sightings accordingly. The x-axis shows each year, while the y-axis represents the count of sightings. A line chart with dots was used to show year-over-year changes.
 
@@ -26,7 +26,7 @@ For encoding, I used the year on the x-axis and count on the y-axis. I included 
 
 ##  Plot 2: Interactive Map of UFO Sightings by Country
 
-<iframe src="/assets/chart2_ufo_map.html" width="750" height="500"></iframe>
+<iframe src="/assets/chart2_ufo_map.html" width="750" height="700"></iframe>
 
 This plot displays UFO sightings using a world map. Each point represents a sighting and is positioned by latitude and longitude. I used a dropdown filter to let users select a country and see sightings specific to that country. The shape of the UFO is encoded using color.
 
