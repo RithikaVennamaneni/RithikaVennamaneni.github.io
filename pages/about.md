@@ -12,9 +12,26 @@ I’m a Master’s student in Information Management at UIUC, interested in maki
 
 
 <div class="row">
-{% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Other Skills" source=site.data.other-skills %}
+  <div class="col-lg">
+    <h2 class="mb-3">Technical & Analytical Skills</h2>
+
+    <!-- Example skill row -->
+    <div class="row justify-content-between align-items-center">
+      <div class="col-8">
+        <p class="mb-1">Python</p>
+      </div>
+      <div class="col-2 text-right text-muted">Expert</div>
+    </div>
+    <div class="progress mb-4 bg-themed" style="height: 8px;">
+      <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+    <!-- Repeat above blocks for each skill or insert the full set of HTML from my last message -->
+    <!-- You can also include multiple categories (like Programming, Business, Tools) inside the same column -->
+
+  </div>
 </div>
+
 
 <div class="row">
 {% include about/timeline.html %}
