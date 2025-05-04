@@ -2,31 +2,92 @@
 
   <h2 class="mb-3">{{ include.title }}</h2>
 
-  {% for skill in include.source %}
+  <!-- Programming & Data Analytics -->
+  {% assign skills = 
+    "Python:Expert:95,SQL:Expert:90,Data Cleaning:Advanced:85,Data Visualization (Python/Tableau/Power BI):Expert:92,ETL:Intermediate:75,vega-lite:Intermediate:70,Jekyll:Intermediate:65,Computer Vision:Basic:50,Business Intelligence:Expert:90,Dashboard Development:Expert:92,GenAI & Copilot:Intermediate:75,SAP:Intermediate:70" | split: "," %}
 
-  <div class="row justify-content-between align-items-center">
-    <div class="col-8">
-      <p class="mb-1">{{ skill.name }}</p>
+  {% for item in skills %}
+    {% assign skill_parts = item | split: ":" %}
+    {% assign name = skill_parts[0] %}
+    {% assign level = skill_parts[1] %}
+    {% assign percentage = skill_parts[2] %}
+  
+    <div class="row justify-content-between align-items-center">
+      <div class="col-8">
+        <p class="mb-1">{{ name }}</p>
+      </div>
+      <div class="col-2 text-right text-muted">{{ level }}</div>
     </div>
-<!--   <div class="col-2 text-right"> <!-- could work as a last resort --> 
-      &nbsp; &nbsp; &nbsp; < <div class="text-muted">{{skill.level}}</div><div class="col-1 text-right"></div><!-- could work as a last resort -->
-      <!--< {{skill.level}}-->
-      <!--<p class="mb-1 text-muted">{{ skill.level }}</p>-->
-      <!--<div class="mb-1 text-muted text-left">{{ skill.level }}</div>-->
-    <!--</div>-->
-  </div>
 
-  <div class="progress mb-4 bg-themed" style="height: 8px;">
-    <div class="progress-bar bg-{{ skill.color | default: "primary" }} wow animated slideInLeft"
-      data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
-      role="progressbar"
-      style="width: {{ skill.percentage }}%;"
-      aria-valuenow="{{ skill.percentage }}"
-      aria-valuemin="0"
-	 aria-valuemax="100">
+    <div class="progress mb-4 bg-themed" style="height: 8px;">
+      <div class="progress-bar bg-primary wow animated slideInLeft"
+        data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
+        role="progressbar"
+        style="width: {{ percentage }}%;"
+        aria-valuenow="{{ percentage }}"
+        aria-valuemin="0"
+        aria-valuemax="100">
+      </div>
     </div>
-  </div>
+  {% endfor %}
 
+  <!-- Business & IT Analysis -->
+  {% assign skills_biz = 
+    "Process Documentation:Advanced:85,Requirement Gathering:Advanced:80,Stakeholder Communication:Expert:90,Product Lifecycle & Marketing:Intermediate:70,Strategic Planning:Advanced:85,KPI Analysis:Advanced:80,Operations:Advanced:80" | split: "," %}
+
+  {% for item in skills_biz %}
+    {% assign skill_parts = item | split: ":" %}
+    {% assign name = skill_parts[0] %}
+    {% assign level = skill_parts[1] %}
+    {% assign percentage = skill_parts[2] %}
+  
+    <div class="row justify-content-between align-items-center">
+      <div class="col-8">
+        <p class="mb-1">{{ name }}</p>
+      </div>
+      <div class="col-2 text-right text-muted">{{ level }}</div>
+    </div>
+
+    <div class="progress mb-4 bg-themed" style="height: 8px;">
+      <div class="progress-bar bg-success wow animated slideInLeft"
+        data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
+        role="progressbar"
+        style="width: {{ percentage }}%;"
+        aria-valuenow="{{ percentage }}"
+        aria-valuemin="0"
+        aria-valuemax="100">
+      </div>
+    </div>
+  {% endfor %}
+
+  <!-- Software & Project Tools -->
+  {% assign tools = 
+    "Jupyter Notebook:Expert:90,Visual Studio:Intermediate:75,Google Analytics:Intermediate:70,Microsoft Office Suite:Expert:95,AWS:Intermediate:70,Agile Methodologies:Advanced:85,MS Project:Intermediate:70,Task Prioritization:Advanced:80,Business Strategy:Advanced:85" | split: "," %}
+
+  {% for item in tools %}
+    {% assign skill_parts = item | split: ":" %}
+    {% assign name = skill_parts[0] %}
+    {% assign level = skill_parts[1] %}
+    {% assign percentage = skill_parts[2] %}
+  
+    <div class="row justify-content-between align-items-center">
+      <div class="col-8">
+        <p class="mb-1">{{ name }}</p>
+      </div>
+      <div class="col-2 text-right text-muted">{{ level }}</div>
+    </div>
+
+    <div class="progress mb-4 bg-themed" style="height: 8px;">
+      <div class="progress-bar bg-info wow animated slideInLeft"
+        data-wow-delay="{{ forloop.index | divided_by: 20.0 }}"
+        role="progressbar"
+        style="width: {{ percentage }}%;"
+        aria-valuenow="{{ percentage }}"
+        aria-valuemin="0"
+        aria-valuemax="100">
+      </div>
+    </div>
   {% endfor %}
 
 </div>
+
