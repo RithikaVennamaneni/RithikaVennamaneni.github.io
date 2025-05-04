@@ -7,8 +7,9 @@ weight: 3
 
 # **About Me**
 
-Hi I am **{{ site.author.name }}**,<br>
-possibly a corgi, most definitely not!  Either way there are really neat things I am up to!
+Hi I am Rithika Vennamaneni,<br>
+I’m a Master’s student in Information Management at UIUC, interested in making data easy to understand and operations easier to manage. I enjoy building dashboards, solving messy problems, and learning new tools along the way.
+
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
